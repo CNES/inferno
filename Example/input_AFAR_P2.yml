@@ -1,0 +1,14 @@
+Date:
+  begin: 13/02/2021
+  end: 26/02/2021
+IO:
+  output_dir: ~/scratch/output/AFAR_P2
+  working_dir: ~/scratch/working/AFAR_P2
+MNT: /work/datalake/static_aux/MNT/SRTM_30_hgt
+ROI:
+  Upper_left_x: 40.33
+  Upper_left_y: 11.7
+  Lower_rigth_x: 40.53
+  Lower_rigth_y: 12
+auth:
+  PEPS: auth.yml

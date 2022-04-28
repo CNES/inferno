@@ -1,0 +1,14 @@
+Date:
+  begin: 01/09/2021
+  end: 15/09/2021
+IO:
+  output_dir:  ~/scratch/output/PALMA_P3
+  working_dir:  ~/scratch/working/PALMA_P3
+MNT: /work/datalake/static_aux/MNT/SRTM_30_hgt
+ROI:
+  Upper_left_x: -18.2
+  Upper_left_y: 28.7
+  Lower_rigth_x: -17.8
+  Lower_rigth_y: 28.5
+auth:
+  peps: auth.yml

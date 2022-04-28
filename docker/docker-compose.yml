@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  app:
+    image: inferno
+    build: .
+    environment:
+      - DISPLAY=${DISPLAY}
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - <host_path>:/home/user/share
+    network_mode: host
