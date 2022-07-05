@@ -1,3 +1,4 @@
+# Copyright 2022 CNES 
 from dataclasses import dataclass, field
 import dataclasses 
 import os
