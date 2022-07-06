@@ -25,7 +25,6 @@ ENV SNAPHU_INSTALL_DIRNAME=/usr/local/bin
 # ----------------------------------------------------------------------------
 ADD OTB-${OTB_VERSION}-Linux64.run /tmp
 ADD gdal-config /tmp
-ADD inferno-develop.tar.gz /tmp
 
 # As ROOT
 USER root
@@ -98,7 +97,10 @@ RUN cd python_src \
 ENV LIBGL_ALWAYS_INDIRECT=1
  
 # install SNAPHU
-RUN cd /tmp/inferno-develop/ \
+RUN cd /tmp \
+    && git clone https://github.com/CNES/inferno.git
+
+RUN cd /tmp/inferno/ \
     && mkdir ./snaphu-v2.0.5/bin \
     && sudo mkdir -p /usr/local/man/man1/ \
     && cd ./snaphu-v2.0.5/src \
@@ -107,10 +109,10 @@ RUN cd /tmp/inferno-develop/ \
 
 
 # Install inferno
-RUN cd /tmp/inferno-develop \
+RUN cd /tmp/inferno \
     && sudo apt-get update && sudo apt-get install -y python3-pyqt5 \
     && python3 -m pip --no-cache-dir install . \ 
-    && rm -rf /tmp/inferno-develop
+    && rm -rf /tmp/inferno
 
 ENV PATH=/home/user/.local/bin:$PATH
 
