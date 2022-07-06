@@ -269,6 +269,7 @@ class Parameters():
     inputConfig : ConfigParser.InputConfig = ConfigParser.InputConfig()
     treatment     : ParametersHelper.Treatment      = ParametersHelper.Treatment()  
     postTreatment : ParametersHelper.PostTreatment  = ParametersHelper.PostTreatment() 
+    provider : str = "" 
         
     def toDict(self)-> dict:
         output = {}
