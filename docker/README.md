@@ -36,9 +36,6 @@ cd docker
 # download OTB-7.4.0-Linux64.run in docker folder
 wget https://www.orfeo-toolbox.org/packages/OTB-7.4.0-Linux64.run 
 
-# inferno-develop.tar.gz (you can manually put the inferno-develop.tar.gz in docker folder )
-wget https://gitlab.cnes.fr/demortr/inferno/-/archive/master/inferno-master.tar.gz
-
 # Build the image 
 docker-compose build
 ```
