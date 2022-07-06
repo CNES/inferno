@@ -15,9 +15,12 @@ See [Docker](docker)
 ## Install
 ### Dependencies
 
-#### **DiapOTB**
+#### **DiapOTB** 
 INFERNO depends on [DiapOTB](https://gitlab.orfeo-toolbox.org/remote_modules/diapotb) and especialy on its [python API](https://gitlab.orfeo-toolbox.org/remote_modules/diapotb#python).
 Please refer to its documentation to install it.
+
+#### **DEM**
+INFERNO calculations depend on DEM (Digital Elevation Model) of the Region of Interest. The current DEM to be used is the 30-Meter SRTM. It can be downlaoded easily for the area of interest at  https://dwtkns.com/srtm30m/ (A NASA Earthdata login is required to download the files). 
 
 #### **SNAPHU**  
 INFERNO's unwrapping phase step relies on [SNAPHU](https://web.stanford.edu/group/radar/softwareandlinks/sw/snaphu/). To compile SNAPHU in ```snaphu-v2.0.5/bin``` folder, the following command line must be executed from INFERNO folder.
